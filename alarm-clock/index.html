@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Alarm Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <div class="toggle">
+    <span>🌙</span>
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+    <span>☀️</span>
+  </div>
+
+  <div class="clock-card">
+    <h2 id="date" class="date"></h2>
+    <div id="time" class="time"></div>
+
+    <div class="alarm-box">
+      <select id="alarm-hour"></select>
+      <span>:</span>
+      <select id="alarm-minute"></select>
+      <span>:</span>
+      <select id="alarm-second"></select>
+    </div>
+
+    <p id="countdown" class="countdown">No alarm set</p>
+
+    <div class="buttons">
+      <button id="start">Start Alarm</button>
+      <button id="cancel">Stop</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
